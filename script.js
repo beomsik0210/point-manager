@@ -10,12 +10,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "여기에 입력",
-  authDomain: "여기에 입력",
-  projectId: "여기에 입력",
-  storageBucket: "여기에 입력",
-  messagingSenderId: "여기에 입력",
-  appId: "여기에 입력"
+    apiKey: "AIzaSyCGQnpivusum0ocUuHx-AFrjzl1dukui8A",
+    authDomain: "hankyul-point.firebaseapp.com",
+    projectId: "hankyul-point",
+    storageBucket: "hankyul-point.firebasestorage.app",
+    messagingSenderId: "774806046730",
+    appId: "1:774806046730:web:b663d65d9504fdd588b7f3"
 };
 
 const app = initializeApp(firebaseConfig);
