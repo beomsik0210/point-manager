@@ -36,7 +36,7 @@ await signInAnonymously(auth);
 console.log(auth.currentUser.uid);
 
 // 🔥 관리자 UID
-const ADMIN_UID = "여기에_관리자_UID";
+const ADMIN_UID = "yo1bW58IrCUxR1jLcsgwzWYb4lV2";
 
 // 관리자 체크 함수
 function isAdmin() {
