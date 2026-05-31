@@ -81,7 +81,7 @@ window.addPoint = async (id,current) => {
     point: current + value
   });
 
-  location.reload();
+  loadUsers();
 };
 
 window.minusPoint = async (id,current) => {
@@ -95,5 +95,14 @@ window.minusPoint = async (id,current) => {
 
   location.reload();
 };
+
+window.deleteUser = async (id) => {
+    const ok = confirm("정말 삭제할까요?");
+    if (!ok) return;
+  
+    await deleteDoc(doc(db, "users", id));
+  
+    loadUsers(); // 화면 새로고침 대신 다시 불러오기
+  };
 
 loadUsers();
