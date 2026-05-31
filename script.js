@@ -6,6 +6,7 @@ import {
   addDoc,
   getDocs,
   updateDoc,
+  deleteDoc,
   doc
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
@@ -55,11 +56,15 @@ async function loadUsers() {
       <input type="number" id="input-${item.id}" value="1">
 
       <button onclick="addPoint('${item.id}',${user.point})">
-        +
+        추가
       </button>
 
       <button onclick="minusPoint('${item.id}',${user.point})">
-        -
+        차감
+      </button>
+      
+      <button onclick="deleteUser('${item.id}')">
+        삭제
       </button>
     `;
 
