@@ -5,6 +5,7 @@ body {
     background: #0b0b0d;
     color: #f5f5f5;
     font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", sans-serif;
+    padding: 14px;
   }
   
   h1, h2, h3 {
@@ -12,6 +13,9 @@ body {
     letter-spacing: -0.5px;
   }
   
+  /* =========================
+     버튼
+  ========================= */
   button {
     border: none;
     border-radius: 14px;
@@ -21,6 +25,7 @@ body {
     padding: 12px 18px;
     cursor: pointer;
     box-shadow: 0 6px 18px rgba(246, 211, 107, 0.25);
+    transition: 0.2s;
   }
   
   button:hover {
@@ -28,6 +33,9 @@ body {
     opacity: 0.9;
   }
   
+  /* =========================
+     입력창
+  ========================= */
   input, select {
     width: 100%;
     box-sizing: border-box;
@@ -39,6 +47,34 @@ body {
     font-size: 15px;
   }
   
+  /* =========================
+     회원 카드 (핵심 추가)
+  ========================= */
+  .user {
+    background: #141416;
+    border: 1px solid #2b2b2f;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 12px 0;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+  
+  /* 카드 간 구분선 느낌 */
+  .user:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+    background: #2b2b2f;
+    opacity: 0.6;
+  }
+  
+  /* =========================
+     테이블 (혹시 사용 시)
+  ========================= */
   table {
     width: 100%;
     border-collapse: separate;
@@ -61,6 +97,9 @@ body {
     font-size: 14px;
   }
   
+  /* =========================
+     카드 공통
+  ========================= */
   .container,
   .card,
   .section,
@@ -73,6 +112,9 @@ body {
     box-shadow: 0 8px 24px rgba(0,0,0,0.35);
   }
   
+  /* =========================
+     포인트 박스
+  ========================= */
   .point-box {
     background: linear-gradient(135deg, #191919, #2a2315);
     border: 1px solid #d6aa48;
@@ -87,6 +129,9 @@ body {
     color: #f6d36b;
   }
   
+  /* =========================
+     랭킹
+  ========================= */
   .rank-1 {
     border: 1px solid #f6d36b;
     background: linear-gradient(135deg, #1c1c1c, #332713);
@@ -97,6 +142,9 @@ body {
     border: 1px solid #555;
   }
   
+  /* =========================
+     배지
+  ========================= */
   .badge {
     display: inline-block;
     background: #2a2315;
@@ -108,6 +156,9 @@ body {
     font-weight: 700;
   }
   
+  /* =========================
+     프로그레스바
+  ========================= */
   .progress {
     width: 100%;
     height: 10px;
@@ -122,6 +173,9 @@ body {
     border-radius: 999px;
   }
   
+  /* =========================
+     반응형
+  ========================= */
   @media (max-width: 600px) {
     body {
       padding: 14px;

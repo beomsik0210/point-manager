@@ -33,6 +33,7 @@ const auth = getAuth(app);
 
 // 로그인
 await signInAnonymously(auth);
+console.log(auth.currentUser.uid);
 
 // 🔥 관리자 UID
 const ADMIN_UID = "여기에_관리자_UID";
@@ -93,7 +94,7 @@ async function loadUsers() {
         <button onclick="addPoint('${item.id}', ${user.point})">추가</button>
         <button onclick="minusPoint('${item.id}', ${user.point})">차감</button>
         <button onclick="deleteUser('${item.id}')">삭제</button>
-      ` : `<p>관리자만 수정 가능</p>`}
+      ` : `` }
     `;
 
     userList.appendChild(div);
